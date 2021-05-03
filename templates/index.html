@@ -5,9 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Harris</title>
     <link rel="stylesheet" type="text/css" href="static/style.css" media="screen"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+              crossorigin="anonymous">
+            </script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
     <script type="text/javascript" src="/static/index.js"></script>
 </head>
 <body>
-    <div>Test</div>
+    <video autoplay muted loop id="myVideo">
+        <source src="./static/websport.webm" type="video/webm">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="overlay">
+        <nav>
+            <a href="https://github.com/danharris-stu" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+       <div class="text-wrapper">
+            <h1>I will DESIGN, DEVELOP, and DELIVER</h1>
+            <h1>all your front-end needs on time and on budget.</h1>
+        </div>
+        <a href="#about"><i class="fa fa-chevron-down fa-5x"></i></a>
+        <!--use the fa-lg (33% increase), fa-2x, fa-3x, fa-4x, or fa-5x classes--> 
+    </div>
+
+    <div class="content-area">
+        <div class="about" id="about">
+            <img src="./static/images/img_avatar.png" alt="Avatar">
+            <div class="text-wrapper">
+                <h2><b>DANIEL HARRIS</b></h2> 
+                <p id="fed">Front-End Developer</p> 
+                <a class="dark" href="#contact">Click here to start a conversation!</a>
+            </div>
+            <p id="about-prof">SERVICES</p>
+            <div class="row">
+                <div class="column">
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul>
+                        <li>Figma</li>
+                        <li>GitHub</li>
+                        <li>AWS Services</li>
+                        <li>Trello</li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <ul>
+                        <li>React</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>And more!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <h1>PAST PROJECTS</h1>
+            <div class="slide-box">
+                <div class="cards">1</div>
+                <div class="cards">2</div>
+                <div class="cards">3</div>
+                <div class="cards">4</div>
+                <div class="cards">5</div>
+                <div class="cards">6</div>
+            </div>
+            <a href="https://github.com/danharris-stu" target="_blank" rel="noopener noreferrer">Check out my GitHub! <img src="./static/images/github-brands.svg" alt="GitIcon" class="git-ico" ></a>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="contact" id="contact">
+            <div class="column-wide light">
+                <h1>Get in touch with me today!</h1>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Your e-mail..">
+
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="general">General</option>
+                        <option value="issue">Issue</option>
+                        <option value="business">Business</option>
+                    </select>
+
+                    <label for="textarea">Description</label>
+                    <br>
+                    <textarea id="textarea" name="text" rows="12"></textarea>
+                    <br/>
+
+
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="column-wide">
+                <iframe id="myMap" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJYaIKa46jDEsRHyYSHwDUH54&key=AIzaSyBJoIAiN5Aq2qwzvUceEKULxVTkeSm1LPs" allowfullscreen></iframe>
+                <div class="text-wrapper-lj">
+                    <h1 id="contact-head">Contact Details:</h1>
+                    <h1>Daniel Harris</h1>
+                    <h1>E-mail: Daniel.Harris@keyin.com</h1>
+                    <h1>Call: 1-(709)-468-8878</h1>
+                    <h1>St. John's, Newfoundland, Canada</h1>
+                    <h1 id="icons">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="./static/images/facebook-square-brands.svg" alt="FaceBook" class="sm-icon" >
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="./static/images/linkedin-brands.svg" alt="LinkedIn" class="sm-icon" >
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="./static/images/twitter-square-brands.svg" alt="Twitter" class="sm-icon">
+                        </a>
+                    </h1>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <p>© 2021</p>
+        </footer>
+
+    </div>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slide-box').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+    });
+  </script>   
 </body>
 </html>
